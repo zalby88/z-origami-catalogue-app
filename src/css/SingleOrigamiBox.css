@@ -1,0 +1,35 @@
+.single-box-min {
+    display: inline;
+    width: 33%;
+    float: left;
+}
+
+.single-box-min .details-section {
+    margin: 1em;
+}
+
+/* Variation of https://www.w3.org/Style/Examples/007/leaders.en.html */
+.single-box-min .details-section ul.dot-leaders {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none
+}
+
+.single-box-min .details-section ul.dot-leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "
+}
+
+.single-box-min .details-section ul.dot-leaders span:first-child {
+    padding-right: 0.33em;
+    background-color: #f7f7f7;
+}
+
+.single-box-min .details-section ul.dot-leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background-color: #f7f7f7;
+}

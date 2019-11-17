@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 /* Import Custom Components */
 import HeaderBar from '../cmpnts/HeaderBar';
-import OrigamiBox from '../cmpnts/OrigamiBox';
 import OrigamiBoxCntnr from '../cntnrs/OrigamiBoxCntnr';
 
 class OrigamiCtlgContainer extends Component {

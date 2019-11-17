@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './css/MainCatalogue.css';
 import './css/HeaderBar.css';
-import './css/OrigamiBox.css';
+import './css/SingleOrigamiBox.css';
 import './css/OrigamiBoxCntnr.css';
 
 import OrigamiCtlgContainer from './cntnrs/OrigamiCtlgContainer';

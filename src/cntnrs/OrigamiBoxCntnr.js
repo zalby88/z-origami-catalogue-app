@@ -1,6 +1,6 @@
 import React from 'react';
 
-import OrigamiBox from '../cmpnts/OrigamiBox';
+import SingleOrigamiBox from '../cmpnts/SingleOrigamiBox';
 
 const OrigamiBoxCntnr = (props) => {
     return (
@@ -8,7 +8,7 @@ const OrigamiBoxCntnr = (props) => {
 
             {props.origamis.map(singleOrigami => {
                 return (
-                    <OrigamiBox
+                    <SingleOrigamiBox
                         key={singleOrigami.id}
                         id={singleOrigami.id}
                         name={singleOrigami.name}
