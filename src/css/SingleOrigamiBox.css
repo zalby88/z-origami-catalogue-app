@@ -1,35 +1,97 @@
+/* --------------*/
+/* Mobile-First */
+
 .single-box-min {
     display: inline;
-    width: 33%;
+    width: 100%;
     float: left;
+}
+
+.single-box-min .image-section {
+    margin: 1em 1em 1em 1em;
+    max-width: inherit;
+    max-height: inherit;
+}
+
+.single-box-min .image-section img {
+    width: 100%;
+    border: 0.3em outset #D1D1D1;
+    border-radius: 2px;
 }
 
 .single-box-min .details-section {
     margin: 1em;
+    font-size: 1.2em;
+    color: dimgray;
 }
 
-/* Variation of https://www.w3.org/Style/Examples/007/leaders.en.html */
+.single-box-min .details-section span {
+    display: block;
+}
+
 .single-box-min .details-section ul.dot-leaders {
-    max-width: 40em;
     padding: 0;
     overflow-x: hidden;
     list-style: none
 }
 
-.single-box-min .details-section ul.dot-leaders li:before {
-    float: left;
-    width: 0;
-    white-space: nowrap;
-    content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "
+.single-box-min .details-section ul.dot-leaders li {
+    margin-bottom: 0.5em;
 }
 
-.single-box-min .details-section ul.dot-leaders span:first-child {
-    padding-right: 0.33em;
-    background-color: #f7f7f7;
+/* --------------*/
+/* Tablet Only */
+
+@media only screen and (min-width: 768px) {
+    .single-box-min {
+        width: 50%;
+    }
+
+    .single-box-min .details-section {
+        font-size: 1.2em;
+    }
 }
 
-.single-box-min .details-section ul.dot-leaders span + span {
-    float: right;
-    padding-left: 0.33em;
-    background-color: #f7f7f7;
+/* --------------*/
+/* Desktop Only */
+
+@media only screen and (min-width: 1024px) {
+    .single-box-min {
+        width: 33%;
+    }
+
+    .single-box-min .details-section {
+        font-size: 1.2em;
+    }
+
+    .single-box-min .details-section span {
+        display: inline;
+    }
+
+    /* Variation of https://www.w3.org/Style/Examples/007/leaders.en.html */
+    .single-box-min .details-section ul.dot-leaders {
+        max-width: 40em;
+    }
+
+    .single-box-min .details-section ul.dot-leaders li {
+        margin-bottom: 0;
+    }
+
+    .single-box-min .details-section ul.dot-leaders li:before {
+        float: left;
+        width: 0;
+        white-space: nowrap;
+        content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
+    }
+
+    .single-box-min .details-section ul.dot-leaders span:first-child {
+        padding-right: 0.33em;
+        background-color: #f7f7f7;
+    }
+
+    .single-box-min .details-section ul.dot-leaders span + span {
+        float: right;
+        padding-left: 0.33em;
+        background-color: #f7f7f7;
+    }
 }

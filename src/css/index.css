@@ -4,7 +4,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #696969;
-    background-image: url("./css/img/retina-wood.png");
+    background-image: url("./img/retina-wood.png");
 }
 
 code {

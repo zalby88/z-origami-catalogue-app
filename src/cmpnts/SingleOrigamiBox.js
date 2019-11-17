@@ -1,9 +1,14 @@
 import React from 'react';
 
+import imageNotAvailable from '../origami_img/image_not_available.png';
+
 
 const SingleOrigamiBox = (props) => {
     return (
         <div className="single-box-min">
+            <div className="image-section">
+                <img src={imageNotAvailable} />
+            </div>
             <div className="details-section">
                 <ul className="dot-leaders">
                     <li style={{ display: "none" }}>
